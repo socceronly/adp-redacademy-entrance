@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- // Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Black+Han+Sans|Lora:400,700,700i" rel="stylesheet">
+	<!-- Style Sheets -->
+	<link rel="stylesheet" href="css/styles.css">
+	<!-- Meta Tags -->
+	<meta charset="UTF-8">
+	<title>ADP Entrance Evaluation - Red Academy</title>
+</head>
+<body>
+	<div class="wrapper">
+<!-- 	****************
+		* Select Quizz Block
+		**************** -->
+		<div id="pickQuizz">
+			<h1>Pick Your Quizz</h1>
+			<div class="quizzTitleWrapper">
+				<div id="chooseQuiz0"></div>
+				<div onClick="pickYourQuizz(0)" class="button"></div>
+			</div>
+			<div class="quizzTitleWrapper">
+				<div id="chooseQuiz1"></div>
+				<div onClick="pickYourQuizz(1)" class="button"></div>
+			</div>
+		</div>
+<!-- 	*****************
+		* Quizz Block
+		***************** -->
+		<div id="quizz">
+			<h2 id="quizzTitle"></h2>
+
+			<h3 id="quizzQuestion"></h3>
+			<!-- answer 1 -->
+			<div class="answerWrapper0">
+				<div id="answer0"></div>
+				<div onClick="pickAnswer(0)" class="button"></div>
+			</div>
+			<!-- answer 2 -->
+			<div class="answerWrapper1">
+				<div id="answer1"></div>
+				<div onClick="pickAnswer(1)" class="button"></div>
+			</div>
+			<!-- answer 3 -->
+			<div class="answerWrapper2">
+				<div id="answer2"></div>
+				<div onClick="pickAnswer(2)" class="button"></div>
+			</div>
+			<!-- answer 4 -->
+			<div class="answerWrapper3">
+				<div id="answer3"></div>
+				<div onClick="pickAnswer(3)" class="button"></div>
+			</div>
+			<h3 id="userScore"></h3>
+		</div>
+<!-- 	**********************
+		* Show Score Block
+		********************** -->
+		<div id="showUserScore">
+			<h1>Your Score</h1>
+			<h3 id="finalScore"></h3>
+			<div class="flexWrapper">
+				<div onClick="reset()" class="button"></div>
+				<h3>Try Again</h3>
+			</div>
+		</div>
+	</div>
+<!--****************
+	* Load Scripts
+	**************** -->
+	<script src="scripts/script.js"></script>
+</body>
+</html>
